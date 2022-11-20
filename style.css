@@ -1,0 +1,402 @@
+html, body {
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #38383b;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+main {
+  margin-top: 2%;
+}
+
+.top-utilities {
+  background-color: #011e41;
+  color: #FFFF;
+}
+
+.top-utilities ul {
+  display: flex;
+}
+
+.top-utilities ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+.second-top-utilities {
+  display: flex;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo-title {
+  display: flex;
+  padding: 15px;
+  width: 35%;
+}
+
+.logo-title img {
+  width: 25%;
+}
+
+.title-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  padding: 10px;
+}
+
+.categories {
+  display: flex;
+  align-self: center;
+}
+
+.categories li {
+  color: #011e41;
+  font: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  list-style: none;
+}
+
+.categories li:hover {
+  color: #b4d8b4;
+}
+
+.bizyoltitle h1,
+.bizyoltitle p {
+  margin-left: 7.5%;
+  margin-top: 30px;
+}
+
+.bizyoltitle h1 {
+  color: #011e41;
+  font-size: 50px;
+}
+
+.bizyolcontent {
+  display: flex;
+  margin-left: 7.5%;
+}
+
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  background-image: url(./images/bizyol.jpg);
+  width: 53%;
+}
+
+.banner {
+  color: #FFFF;
+}
+
+.banner b {
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  font-size: 35px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.banner p {
+  position: absolute;
+  top: 75%;
+  left: 7%;
+  font-size: 18px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.rightrows {
+  list-style: none;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.firstrow,
+.secondrow,
+.thirdrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rightrows li {
+  padding: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.rightrows p {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.yangiliklar h2 {
+  margin-top: 70px;
+  margin-left: 7.5%;
+}
+
+.newsrow {
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+}
+
+.newscard {
+  width: 27%;
+  margin-top: 90px;
+  background-color: #0073a6;
+  height: 100%;
+}
+
+.newscard:hover {
+  background-color: #064a67;
+}
+
+.cardbody {
+  padding: 20px;
+  font-weight: bold;
+  color: #FFFF;
+  line-height: 1.4rem;
+}
+
+.cardbody b {
+  font-size: 25px;
+}
+
+.cardbody p {
+  margin-top: 20px;
+}
+
+.cardpict img {
+  width: 100%;
+}
+
+.loyihalar h2 {
+  margin-left: 6.5%;
+  margin-top: 70px;
+}
+
+.loyiha1 { grid-area: first; position: relative; }
+.loyiha2 { grid-area: second; position: relative; }
+.loyiha3 { grid-area: third; position: relative; }
+.loyiha4 { grid-area: fourth; position: relative; }
+.loyiha5 { grid-area: fifth; position: relative; }
+
+.loyiha1 p,
+.loyiha2 p,
+.loyiha3 p,
+.loyiha4 p,
+.loyiha5 p {
+  position: absolute;
+  text-align: left;
+}
+
+.projectsrow {
+  display: grid;
+  grid-template-areas:
+    'first first first second second second'
+    'third third fourth fourth fifth fifth';
+  gap: 3%;
+  padding: 10px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+.projectsrow > div {
+  background-image: url(./images/loyihalar.jpg);
+  height: 300px;
+  padding: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #FFFF;
+}
+
+.diqqatmarkazida h2 {
+  margin-left: 6.5%;
+  margin-top: 70px;
+}
+
+.diqqat1 { grid-area: dfirst; }
+.diqqat2 { grid-area: dsecond; }
+.diqqat3 { grid-area: dthird; }
+
+
+.diqqatrow {
+  display: grid;
+  grid-template-areas:
+    'dfirst dsecond dthird';
+  gap: 3%;
+  padding: 10px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+.diqqatrow > div {
+  background-image: url(./images/diqqatcar.png);
+  height: 300px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.socialmedia h2 {
+  margin-left: 6.5%;
+  margin-top: 70px;
+}
+
+.tarmoq1 { grid-area: tfirst; display: flex; }
+.tarmoq2 { grid-area: tsecond; display: flex; }
+.tarmoq3 { grid-area: tthird; display: flex; }
+.tarmoq4 { grid-area: tfourth; display: flex; }
+.tarmoq5 { grid-area: tfifth; display: flex; }
+.tarmoq6 { grid-area: tsixth; display: flex; }
+
+.tarmoq1 p,
+.tarmoq2 p,
+.tarmoq3 p,
+.tarmoq4 p,
+.tarmoq5 p,
+.tarmoq6 p {
+  margin-left: 30px;
+  align-self: center;
+  font-size: 25px;
+}
+
+.tarmoq1 img,
+.tarmoq2 img,
+.tarmoq3 img,
+.tarmoq4 img,
+.tarmoq5 img,
+.tarmoq6 img {
+  width: 80px;
+}
+
+.tarmoq4 img,
+.tarmoq5 img,
+.tarmoq6 img {
+  margin-top: 30px;
+}
+
+.ijtimoiytarmoqlar {
+  display: grid;
+  grid-template-areas:
+    'tfirst tsecond tthird'
+    'tfourth tfifth tsixth';
+  gap: 5%;
+  padding: 10px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+.hbar {
+  margin-top: 80px;
+  border: 10px solid #011e41;
+}
+
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-footer img {
+  width: 150px;
+  height: 150px;
+}
+
+.ftitle-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  padding: 10px;
+}
+
+
+.f1 { grid-area: f1; }
+.f2 { grid-area: f2; }
+.f3 { grid-area: f3; }
+.f4 { grid-area: f4; }
+.f5 { grid-area: f5; }
+.f6 { grid-area: f6; }
+
+.fcategories {
+  display: grid;
+  grid-template-areas:
+    'f1 f2 f3'
+    'f4 f5 f6';
+  gap: 3%;
+  width: 45%;
+  margin-top: 50px;
+  margin-left: 40px;
+  height: 100px;
+}
+
+.f1 ,
+.f2 ,
+.f3 ,
+.f4 ,
+.f5 ,
+.f6 {
+  color: #011e41;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  /* margin: 10px; */
+  list-style: none;
+}
+
+.fcategories li:hover {
+  color: #b4d8b4;
+}
+
+.rightfooter {
+  border-left: 1px solid #0f54a9;
+  width: 35%;
+  margin-top: 50px;
+}
+
+.bzb {
+  border-bottom: 1px solid #0f54a9;
+  padding-bottom: 10px;
+  margin-left: 12px;
+}
+
+.manzil,
+.adress {
+  margin: 12px;
+}
+
+.manzil p {
+  margin-top: 10px;
+}
