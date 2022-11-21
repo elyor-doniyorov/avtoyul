@@ -12,7 +12,7 @@ body {
   color: #38383b;
   display: flex;
   flex-direction: column;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 18px;
   min-height: 100vh;
 }
@@ -21,9 +21,11 @@ main {
   margin-top: 2%;
 }
 
+/* @media only screen and (min-width: 1200px) { */
 .top-utilities {
   background-color: #011e41;
   color: #FFFF;
+  font-family: 'Anek Malayalam';
 }
 
 .top-utilities ul {
@@ -44,6 +46,7 @@ main {
   display: flex;
   padding: 15px;
   width: 35%;
+  color: #011e41;
 }
 
 .logo-title img {
@@ -73,7 +76,7 @@ main {
 }
 
 .categories li:hover {
-  color: #b4d8b4;
+  color: #0073a6;
 }
 
 .bizyoltitle h1,
@@ -85,6 +88,11 @@ main {
 .bizyoltitle h1 {
   color: #011e41;
   font-size: 50px;
+}
+
+.bizyoltitle p {
+  font-family: 'Anek Malayalam';
+  font-size: 20px;
 }
 
 .bizyolcontent {
@@ -117,7 +125,7 @@ main {
   left: 7%;
   font-size: 18px;
   padding: 20px;
-  font-weight: bold;
+  font-family: 'Anek Malayalam';
 }
 
 .rightrows {
@@ -133,14 +141,33 @@ main {
   justify-content: space-between;
 }
 
+.firstrow h2,
+.secondrow h2,
+.thirdrow h2 {
+  color: #011e41;
+  width: fit-content;
+}
+
+.firstrow h2:hover,
+.secondrow h2:hover,
+.thirdrow h2:hover {
+  color: #064a67;
+  width: fit-content;
+}
+
 .rightrows li {
   padding: 15px;
   border-bottom: 1px solid #eaeaea;
 }
 
 .rightrows p {
+  font-family: 'Anek Malayalam';
   font-size: 16px;
   line-height: 23px;
+}
+
+.yangiliklar {
+  /* background-color: #011e41; */
 }
 
 .yangiliklar h2 {
@@ -167,7 +194,6 @@ main {
 
 .cardbody {
   padding: 20px;
-  font-weight: bold;
   color: #FFFF;
   line-height: 1.4rem;
 }
@@ -178,6 +204,7 @@ main {
 
 .cardbody p {
   margin-top: 20px;
+  font-family: 'Anek Malayalam';
 }
 
 .cardpict img {
@@ -202,6 +229,7 @@ main {
 .loyiha5 p {
   position: absolute;
   text-align: left;
+  font-family: 'Anek Malayalam';
 }
 
 .projectsrow {
@@ -248,9 +276,23 @@ main {
   font-size: 20px;
 }
 
+.diqqat1 b, 
+.diqqat2 b, 
+.diqqat3 b {
+  color: #0073a6;
+  letter-spacing: 2px;
+}
+
+.diqqat1 b:hover, 
+.diqqat2 b:hover, 
+.diqqat3 b:hover {
+  color: #011e41;
+}
+
 .socialmedia h2 {
   margin-left: 6.5%;
   margin-top: 150px;
+  color: #011e41;
 }
 
 .tarmoq1 { grid-area: tfirst; display: flex; }
@@ -269,6 +311,7 @@ main {
   margin-left: 30px;
   align-self: center;
   font-size: 25px;
+  font-family: 'Anek Malayalam';
 }
 
 .tarmoq1 img,
@@ -297,6 +340,7 @@ main {
   margin-left: auto;
   margin-right: auto;
   margin-top: 70px;
+  color: #0073a6;
 }
 
 .hbar {
@@ -310,6 +354,7 @@ footer {
   justify-content: center;
   margin-top: 60px;
   margin-bottom: 20px;
+  color: #011e41;
 }
 
 .logo-footer {
@@ -385,8 +430,10 @@ footer {
 
 .manzil p {
   margin-top: 10px;
+  font-family: 'Anek Malayalam';
 }
 
+/* } */
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -516,6 +563,12 @@ footer {
     margin-top: 30px;
   }
 
+  /* .diqqat1 img,
+  .diqqat2 img,
+  .diqqat3 img {
+    margin-top: -10px;
+  } */
+
   .diqqat1 p,
   .diqqat2 p,
   .diqqat3 p {
@@ -528,8 +581,8 @@ footer {
   }
 
   .socialmedia h2 {
-    margin-left: 5%;
-    margin-top: 80px;
+    text-align: center;
+    margin-top: 120px;
     font-size: 20px;
   }
 
@@ -634,4 +687,213 @@ footer {
     width: 100%;
   }
 
+}
+
+/* @media only screen and (min-width: 768px) {
+  .top-utilities ul {
+    font-size: 18px;
+  }
+
+  .title-description {
+    font-size: 15px;
+  }
+
+  .categories {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .bizyoltitle h1 {
+    margin-top: 15px;
+    font-size: 35px;
+    margin-left: 5%;
+  }
+
+  .bizyoltitle p {
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 5%;
+  }
+
+  .logo-title {
+    justify-content: center;
+  }
+
+   .bizyolcontent {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .banner {
+    height: auto;
+  }
+
+  .banner b {
+    font-size: 20px;
+  }
+
+  .banner p {
+    font-size: 15px;
+  }
+
+  .rightrows li {
+    padding: 10px;
+  }
+  
+  .rightrows h2 {
+    font-size: 20px;
+  }
+  
+  .rightrows p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .newsrow {
+    gap: 5%;
+    justify-content: center;
+  }
+  
+  .newscard {
+    margin-top: 30px;
+    width: 40%;
+  }
+
+  .newscard:nth-child(3) {
+    display: none;
+  }
+  
+  .cardbody {
+    padding: 20px;
+    font-weight: bold;
+    color: #FFFF;
+    line-height: 1.4rem;
+  }
+  
+  .cardbody b {
+    font-size: 25px;
+  }
+  
+  .cardbody p {
+    margin-top: 14px;
+  }
+
+  .loyihalar h2 {
+    margin-left: 8%;
+    margin-top: 60px;
+  }
+
+  .projectsrow {
+    grid-template-areas:
+      'first first second second' 
+      'third third fourth fourth';
+    gap: 2%;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  .projectsrow > div {
+    font-size: 30px;
+  }
+
+  .loyiha5 {
+    display: none;
+  }
+  
+  .diqqatrow {
+    margin-top: 50px;
+  }
+
+  .diqqat3 {
+    display: none;
+  }
+
+  .tarmoq1 { grid-area: tfirst; display: flex; justify-content: space-evenly; }
+  .tarmoq2 { grid-area: tsecond; display: flex; justify-content: space-evenly; }
+  .tarmoq3 { grid-area: tthird; display: flex; justify-content: space-evenly; }
+  .tarmoq4 { grid-area: tfourth; display: flex; justify-content: space-evenly; }
+  .tarmoq5 { grid-area: tfifth; display: flex; justify-content: space-evenly; }
+  .tarmoq6 { grid-area: tsixth; display: flex; justify-content: space-evenly; }
+
+  .tarmoq1 img,
+  .tarmoq2 img,
+  .tarmoq3 img,
+  .tarmoq4 img,
+  .tarmoq5 img,
+  .tarmoq6 img {
+    margin-top: 5px;
+  }
+
+  .ijtimoiytarmoqlar {
+    display: grid;
+    grid-template-areas:
+      'tfirst tfirst tfirst tsecond tsecond tsecond'
+      'tthird tthird tthird tfourth tfourth tfourth'
+      'tfifth tfifth tfifth tsixth tsixth tsixth';
+    gap: 2%;
+    margin-top: 50px;
+  }
+
+  footer {
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  
+  .logo-footer {
+    margin: auto;
+  }
+
+  .fcategories {
+    display: none;
+  }
+
+  .rightfooter {
+    margin: auto;
+    border-right: 1px solid #0f54a9;
+    padding: 10px;
+  }
+
+  .bzb {
+    border-bottom: 1px solid #0f54a9;
+    padding-bottom: 10px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .manzil,
+  .adress {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .manzil p {
+    margin-top: 10px;
+  } 
+
+  .top-utilities,
+  .second-top-utilities,
+  .bizningyollar,
+  .bizyolcontent {
+    width: 100%;
+  }
+} */
+
+.gradientbanner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #011e41, transparent);
+  width: 100%;
+  height: 100%;
+}
+
+
+.gradientloyiha {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(175.03deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 4%, rgba(0, 0, 0, 0) 80%);
+  width: 100%;
+  height: 100%;
 }
