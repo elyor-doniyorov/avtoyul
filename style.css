@@ -1,0 +1,899 @@
+html, body {
+  position: relative;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #38383b;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+  min-height: 100vh;
+}
+
+main {
+  margin-top: 2%;
+}
+
+/* @media only screen and (min-width: 1200px) { */
+.top-utilities {
+  background-color: #011e41;
+  color: #FFFF;
+  font-family: 'Anek Malayalam';
+}
+
+.top-utilities ul {
+  display: flex;
+}
+
+.top-utilities ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+.second-top-utilities {
+  display: flex;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2), 0 0 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logo-title {
+  display: flex;
+  padding: 15px;
+  width: 35%;
+  color: #011e41;
+}
+
+.logo-title img {
+  width: 25%;
+}
+
+.title-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  padding: 10px;
+}
+
+.categories {
+  display: flex;
+  align-self: center;
+}
+
+.categories li {
+  color: #011e41;
+  font: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 10px;
+  list-style: none;
+}
+
+.categories li:hover {
+  color: #0073a6;
+}
+
+.bizyoltitle h1,
+.bizyoltitle p {
+  margin-left: 7.5%;
+  margin-top: 30px;
+}
+
+.bizyoltitle h1 {
+  color: #011e41;
+  font-size: 50px;
+}
+
+.bizyoltitle p {
+  font-family: 'Anek Malayalam';
+  font-size: 20px;
+}
+
+.bizyolcontent {
+  display: flex;
+  margin-left: 7.5%;
+}
+
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  background-image: url(./images/bizyol.jpg);
+  width: 53%;
+  color: #FFFF;
+}
+
+.banner b {
+  position: absolute;
+  top: 60%;
+  left: 7%;
+  font-size: 35px;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.banner p {
+  position: absolute;
+  top: 75%;
+  left: 7%;
+  font-size: 18px;
+  padding: 20px;
+  font-family: 'Anek Malayalam';
+}
+
+.rightrows {
+  list-style: none;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.firstrow,
+.secondrow,
+.thirdrow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstrow h2,
+.secondrow h2,
+.thirdrow h2 {
+  color: #011e41;
+  width: fit-content;
+}
+
+.firstrow h2:hover,
+.secondrow h2:hover,
+.thirdrow h2:hover {
+  color: #064a67;
+  width: fit-content;
+}
+
+.rightrows li {
+  padding: 15px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.rightrows p {
+  font-family: 'Anek Malayalam';
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.yangiliklar {
+  /* background-color: #011e41; */
+}
+
+.yangiliklar h2 {
+  margin-top: 70px;
+  margin-left: 7.5%;
+}
+
+.newsrow {
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+}
+
+.newscard {
+  width: 27%;
+  margin-top: 90px;
+  background-color: #0073a6;
+  height: 100%;
+}
+
+.newscard:hover {
+  background-color: #064a67;
+}
+
+.cardbody {
+  padding: 20px;
+  color: #FFFF;
+  line-height: 1.4rem;
+}
+
+.cardbody b {
+  font-size: 25px;
+}
+
+.cardbody p {
+  margin-top: 20px;
+  font-family: 'Anek Malayalam';
+}
+
+.cardpict img {
+  width: 100%;
+}
+
+.loyihalar h2 {
+  margin-left: 6.5%;
+  margin-top: 70px;
+}
+
+.loyiha1 { grid-area: first; position: relative; }
+.loyiha2 { grid-area: second; position: relative; }
+.loyiha3 { grid-area: third; position: relative; }
+.loyiha4 { grid-area: fourth; position: relative; }
+.loyiha5 { grid-area: fifth; position: relative; }
+
+.loyiha1 p,
+.loyiha2 p,
+.loyiha3 p,
+.loyiha4 p,
+.loyiha5 p {
+  position: absolute;
+  text-align: left;
+  font-family: 'Anek Malayalam';
+}
+
+.projectsrow {
+  display: grid;
+  grid-template-areas:
+    'first first first second second second'
+    'third third fourth fourth fifth fifth';
+  gap: 3%;
+  padding: 10px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+}
+
+.projectsrow > div {
+  background-image: url(./images/loyihalar.jpg);
+  height: 300px;
+  padding: 20px;
+  font-size: 35px;
+  font-weight: bold;
+  color: #FFFF;
+}
+
+.diqqatmarkazida h2 {
+  margin-left: 6.5%;
+  margin-top: 70px;
+}
+
+.diqqatrow {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  width: 92%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.diqqatrow > div {
+  height: 300px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.diqqat1 b, 
+.diqqat2 b, 
+.diqqat3 b {
+  color: #0073a6;
+  letter-spacing: 2px;
+}
+
+.diqqat1 b:hover, 
+.diqqat2 b:hover, 
+.diqqat3 b:hover {
+  color: #011e41;
+}
+
+.socialmedia h2 {
+  margin-left: 6.5%;
+  margin-top: 150px;
+  color: #011e41;
+}
+
+.tarmoq1 { grid-area: tfirst; display: flex; }
+.tarmoq2 { grid-area: tsecond; display: flex; }
+.tarmoq3 { grid-area: tthird; display: flex; }
+.tarmoq4 { grid-area: tfourth; display: flex; }
+.tarmoq5 { grid-area: tfifth; display: flex; }
+.tarmoq6 { grid-area: tsixth; display: flex; }
+
+.tarmoq1 p,
+.tarmoq2 p,
+.tarmoq3 p,
+.tarmoq4 p,
+.tarmoq5 p,
+.tarmoq6 p {
+  margin-left: 30px;
+  align-self: center;
+  font-size: 25px;
+  font-family: 'Anek Malayalam';
+}
+
+.tarmoq1 img,
+.tarmoq2 img,
+.tarmoq3 img,
+.tarmoq4 img,
+.tarmoq5 img,
+.tarmoq6 img {
+  width: 80px;
+}
+
+.tarmoq4 img,
+.tarmoq5 img,
+.tarmoq6 img {
+  margin-top: 30px;
+}
+
+.ijtimoiytarmoqlar {
+  display: grid;
+  grid-template-areas:
+    'tfirst tsecond tthird'
+    'tfourth tfifth tsixth';
+  gap: 5%;
+  padding: 10px;
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  color: #0073a6;
+}
+
+.hbar {
+  margin-top: 80px;
+  border: 10px solid #011e41;
+}
+
+footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  color: #011e41;
+}
+
+.logo-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-footer img {
+  width: 150px;
+  height: 150px;
+}
+
+.ftitle-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  padding: 10px;
+}
+
+.f1 { grid-area: f1; }
+.f2 { grid-area: f2; }
+.f3 { grid-area: f3; }
+.f4 { grid-area: f4; }
+.f5 { grid-area: f5; }
+.f6 { grid-area: f6; }
+
+.fcategories {
+  display: grid;
+  grid-template-areas:
+    'f1 f2 f3'
+    'f4 f5 f6';
+  gap: 3%;
+  width: 45%;
+  margin-top: 50px;
+  margin-left: 40px;
+  height: 100px;
+}
+
+.f1 ,
+.f2 ,
+.f3 ,
+.f4 ,
+.f5 ,
+.f6 {
+  color: #011e41;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
+
+.fcategories li:hover {
+  color: #b4d8b4;
+}
+
+.rightfooter {
+  border-left: 1px solid #0f54a9;
+  width: 35%;
+  margin-top: 50px;
+}
+
+.bzb {
+  border-bottom: 1px solid #0f54a9;
+  padding-bottom: 10px;
+  margin-left: 12px;
+}
+
+.manzil,
+.adress {
+  margin: 12px;
+}
+
+.manzil p {
+  margin-top: 10px;
+  font-family: 'Anek Malayalam';
+}
+
+/* } */
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .top-utilities ul {
+    font-size: 10px;
+  }
+
+  .title-description {
+    font-size: 13px;
+  }
+
+  .bizyoltitle h1 {
+    margin-top: 14px;
+    font-size: 20px;
+    margin-left: 5%;
+  }
+
+  .bizyoltitle p {
+    margin-top: 10px;
+    font-size: 12px;
+    margin-left: 5%;
+  }
+
+  .categories {
+    display: none;
+  }
+
+  .logo-title {
+    justify-content: center;
+  }
+
+  .bizyolcontent {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .banner {
+    height: 250px;
+  }
+
+  .banner b {
+    font-size: 14px;
+  }
+
+  .banner p {
+    font-size: 12px;
+  }
+
+  .rightrows li {
+    padding: 10px;
+  }
+  
+  .rightrows h2 {
+    font-size: 17px;
+  }
+  
+  .rightrows p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .yangiliklar h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 5%;
+  }
+
+  .newsrow {
+    flex-direction: column;
+    gap: 1%;
+    justify-content: center;
+  }
+  
+  .newscard {
+    margin-top: 30px;
+  }
+  
+  .cardbody {
+    padding: 20px;
+    font-weight: bold;
+    color: #FFFF;
+    line-height: 1.4rem;
+  }
+  
+  .cardbody b {
+    font-size: 20px;
+  }
+  
+  .cardbody p {
+    margin-top: 14px;
+  }
+
+  .loyihalar h2 {
+    margin-left: 5%;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  .projectsrow {
+    display: grid;
+    grid-template-areas:
+      'first' 
+      'second'
+      'third' 
+      'fourth'
+      'fifth';
+    gap: 2%;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  
+  .projectsrow > div {
+    font-size: 25px;
+  }
+
+  .diqqatmarkazida h2 {
+    margin-left: 5%;
+    margin-top: 250px;
+    font-size: 20px;
+  }
+  
+  .diqqatrow {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 30px;
+  }
+
+  /* .diqqat1 img,
+  .diqqat2 img,
+  .diqqat3 img {
+    margin-top: -10px;
+  } */
+
+  .diqqat1 p,
+  .diqqat2 p,
+  .diqqat3 p {
+    margin-top: 10px;
+  }
+  
+  .diqqatrow > div {
+    font-size: 16px;
+    margin-top: 50px;
+  }
+
+  .socialmedia h2 {
+    text-align: center;
+    margin-top: 120px;
+    font-size: 20px;
+  }
+
+  .tarmoq1 { grid-area: tfirst; display: flex; justify-content: space-evenly; }
+  .tarmoq2 { grid-area: tsecond; display: flex; justify-content: space-evenly; }
+  .tarmoq3 { grid-area: tthird; display: flex; justify-content: space-evenly; }
+  .tarmoq4 { grid-area: tfourth; display: flex; justify-content: space-evenly; }
+  .tarmoq5 { grid-area: tfifth; display: flex; justify-content: space-evenly; }
+  .tarmoq6 { grid-area: tsixth; display: flex; justify-content: space-evenly; }
+
+  .tarmoq1 p,
+  .tarmoq2 p,
+  .tarmoq3 p,
+  .tarmoq4 p,
+  .tarmoq5 p,
+  .tarmoq6 p {
+    margin-left: 0;
+  }
+
+  .tarmoq1 img,
+  .tarmoq2 img,
+  .tarmoq3 img,
+  .tarmoq4 img,
+  .tarmoq5 img,
+  .tarmoq6 img {
+    width: 100px;
+  }
+
+  .tarmoq1 img,
+  .tarmoq2 img,
+  .tarmoq3 img,
+  .tarmoq4 img,
+  .tarmoq5 img,
+  .tarmoq6 img {
+    margin-top: 5px;
+  }
+
+  .ijtimoiytarmoqlar {
+    display: grid;
+    grid-template-areas:
+      'tfirst'
+      'tsecond'
+      'tthird'
+      'tfourth'
+      'tfifth' 
+      'tsixth';
+    gap: 2%;
+    margin-top: 30px;
+  }
+
+  footer {
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  
+  .logo-footer {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .fcategories {
+    display: none;
+  }
+
+  .rightfooter {
+    border-left: none;
+    margin-top: 50px;
+  }
+
+  .bzb {
+    border-bottom: 1px solid #0f54a9;
+    padding-bottom: 10px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .manzil,
+  .adress {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .manzil p {
+    margin-top: 10px;
+  }
+
+  .top-utilities,
+  .second-top-utilities,
+  .bizningyollar,
+  .banner,
+  .logo-title,
+  .rightrows,
+  .newscard,
+  .projectsrow,
+  .diqqatrow,
+  .ijtimoiytarmoqlar,
+  .diqqat1 img,
+  .diqqat2 img,
+  .diqqat3 img,
+  .rightfooter  {
+    width: 100%;
+  }
+
+}
+
+/* @media only screen and (min-width: 768px) {
+  .top-utilities ul {
+    font-size: 18px;
+  }
+
+  .title-description {
+    font-size: 15px;
+  }
+
+  .categories {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .bizyoltitle h1 {
+    margin-top: 15px;
+    font-size: 35px;
+    margin-left: 5%;
+  }
+
+  .bizyoltitle p {
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 5%;
+  }
+
+  .logo-title {
+    justify-content: center;
+  }
+
+   .bizyolcontent {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .banner {
+    height: auto;
+  }
+
+  .banner b {
+    font-size: 20px;
+  }
+
+  .banner p {
+    font-size: 15px;
+  }
+
+  .rightrows li {
+    padding: 10px;
+  }
+  
+  .rightrows h2 {
+    font-size: 20px;
+  }
+  
+  .rightrows p {
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  .newsrow {
+    gap: 5%;
+    justify-content: center;
+  }
+  
+  .newscard {
+    margin-top: 30px;
+    width: 40%;
+  }
+
+  .newscard:nth-child(3) {
+    display: none;
+  }
+  
+  .cardbody {
+    padding: 20px;
+    font-weight: bold;
+    color: #FFFF;
+    line-height: 1.4rem;
+  }
+  
+  .cardbody b {
+    font-size: 25px;
+  }
+  
+  .cardbody p {
+    margin-top: 14px;
+  }
+
+  .loyihalar h2 {
+    margin-left: 8%;
+    margin-top: 60px;
+  }
+
+  .projectsrow {
+    grid-template-areas:
+      'first first second second' 
+      'third third fourth fourth';
+    gap: 2%;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  
+  .projectsrow > div {
+    font-size: 30px;
+  }
+
+  .loyiha5 {
+    display: none;
+  }
+  
+  .diqqatrow {
+    margin-top: 50px;
+  }
+
+  .diqqat3 {
+    display: none;
+  }
+
+  .tarmoq1 { grid-area: tfirst; display: flex; justify-content: space-evenly; }
+  .tarmoq2 { grid-area: tsecond; display: flex; justify-content: space-evenly; }
+  .tarmoq3 { grid-area: tthird; display: flex; justify-content: space-evenly; }
+  .tarmoq4 { grid-area: tfourth; display: flex; justify-content: space-evenly; }
+  .tarmoq5 { grid-area: tfifth; display: flex; justify-content: space-evenly; }
+  .tarmoq6 { grid-area: tsixth; display: flex; justify-content: space-evenly; }
+
+  .tarmoq1 img,
+  .tarmoq2 img,
+  .tarmoq3 img,
+  .tarmoq4 img,
+  .tarmoq5 img,
+  .tarmoq6 img {
+    margin-top: 5px;
+  }
+
+  .ijtimoiytarmoqlar {
+    display: grid;
+    grid-template-areas:
+      'tfirst tfirst tfirst tsecond tsecond tsecond'
+      'tthird tthird tthird tfourth tfourth tfourth'
+      'tfifth tfifth tfifth tsixth tsixth tsixth';
+    gap: 2%;
+    margin-top: 50px;
+  }
+
+  footer {
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  
+  .logo-footer {
+    margin: auto;
+  }
+
+  .fcategories {
+    display: none;
+  }
+
+  .rightfooter {
+    margin: auto;
+    border-right: 1px solid #0f54a9;
+    padding: 10px;
+  }
+
+  .bzb {
+    border-bottom: 1px solid #0f54a9;
+    padding-bottom: 10px;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .manzil,
+  .adress {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .manzil p {
+    margin-top: 10px;
+  } 
+
+  .top-utilities,
+  .second-top-utilities,
+  .bizningyollar,
+  .bizyolcontent {
+    width: 100%;
+  }
+} */
+
+.gradientbanner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to top, #011e41, transparent);
+  width: 100%;
+  height: 100%;
+}
+
+
+.gradientloyiha {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(175.03deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 4%, rgba(0, 0, 0, 0) 80%);
+  width: 100%;
+  height: 100%;
+}
